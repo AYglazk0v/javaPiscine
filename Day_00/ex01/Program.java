@@ -7,6 +7,12 @@ public class Program{
 		Scanner obj = new Scanner(System.in);
 
 		System.out.println("Enter subject int");
+		if (!obj.hasNextInt())
+		{
+			System.err.println("IllegalArgument");
+			obj.close();
+			System.exit(-1);
+		}
 		subject = obj.nextInt();
 		if (subject < 2){
 			System.err.println("IllegalArgument");
@@ -16,7 +22,6 @@ public class Program{
 		while(prb * prb <= subject) {
 			if (subject % prb == 0) {
 				System.out.println("False " + (prb - 1));
-				
 				return ;
 			}
 			prb++;

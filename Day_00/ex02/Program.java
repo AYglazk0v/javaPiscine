@@ -15,6 +15,8 @@ public class Program{
 	public static boolean isPrime(int summ) {
 			int prb = 2;
 
+			if (summ < 2)
+				return(false);
 			while(prb * prb <= summ) {
 				if (summ % prb == 0) {
 					return (false);
@@ -43,7 +45,7 @@ public class Program{
 			if (isPrime(summDigit(subject)))
 				countQueries++;
 		} while (subject != 42);
-		System.out.println("Count of coffee - request - " + countQueries);
+		System.out.println("Count of coffee-request - " + countQueries);
 		obj.close();
 	}
 }

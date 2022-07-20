@@ -63,10 +63,12 @@ public class Program{
 				System.err.println("[ERROR] BAD ARG!");
 				System.exit(-1);
 			}
-			prevWeek++;
+			prevWeek = currWeek;
 			storage = storage * 10 + searchMinInFiveDigits(obj);
 		}
-		printResault(storage, currWeek);
+		if (currWeek > 0) {
+			printResault(storage, currWeek);
+		}
 		obj.close();
 	}
 }

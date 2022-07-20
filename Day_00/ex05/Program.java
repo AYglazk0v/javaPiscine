@@ -2,15 +2,16 @@ import java.util.Scanner;
 
 import javax.imageio.plugins.tiff.ExifGPSTagSet;
 import javax.lang.model.util.ElementScanner14;
+import javax.swing.text.html.HTMLDocument.HTMLReader.SpecialAction;
 public class Program {
 	private static final int MAX_STUDENTS = 10;
 	private static final int MAX_CLASSES_WEEK = 10;
-	private static final String[][] CALENDAR = {{"MO", "TU", "WE", "TH", "FR", "SA", "SU"},
-			{"", "1", "2", "3", "4", "5", "6"},
-			{"7", "8", "9", "10", "11", "12", "13"},
-			{"14", "15", "16", "17", "18", "19", "20"},
-			{"20", "21", "22", "23", "24", "25", "26", "27"},
-			{"28", "29", "30", "", "", "", ""}};
+	private static final String[][] CALENDAR = {{"SU", "MO", "TU", "WE", "TH", "FR", "SA"},
+												{"", "", "1", "2", "3", "4", "5"},
+												{"6", "7", "8", "9", "10", "11", "12"},
+												{"13", "14", "15", "16", "17", "18", "19"},
+												{"20", "21", "22", "23", "24", "25", "26"},
+												{"27", "28", "29", "30", "", "", ""}};
 
 	public static void checkNextLine(Scanner scanner){
 		if (!scanner.hasNextLine()) {
@@ -197,7 +198,7 @@ public class Program {
 		else if (splittedLine[3].equals("NOT_HERE")) {
 			retTable[i][j] = "-1";
 		}
-		else {
+		else if (!splitted[0].equals(".")) {
 			errorExit("[Error] Bad ARG");
 		}
 	}
