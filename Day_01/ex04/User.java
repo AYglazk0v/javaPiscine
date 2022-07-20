@@ -2,6 +2,7 @@ public class User {
 	private Integer id;
 	private Integer balance;
 	private String name;
+	private TransactionsLinkedList transactionsList;
 
 	public User(Integer balance, String name){
 		this.id = UserIdsGenerator.getInstance().generateId();
@@ -12,9 +13,14 @@ public class User {
 			this.balance = 0;
 		}
 		this.name = name;
+		this.id = UserIdsGenerator.getInstance().generateId();
+        this.transactionsList = new TransactionsLinkedList();
 	}
 
 	public User() {
+		this.id = UserIdsGenerator.getInstance().generateId();
+        this.balance = 0;
+        this.transactionsList = new TransactionsLinkedList();
 	}
 
 	public void setBlance(Integer balance) {
@@ -25,6 +31,10 @@ public class User {
 			this.balance = 0;
 		}
 	}
+	
+	public TransactionsLinkedList getTransactionsList() {
+        return transactionsList;
+    }
 
 	public void setID(Integer id) {
 		this.id = id;

@@ -21,7 +21,7 @@ public 	class UsersArrayList implements UserList {
 	}
 
 	@Override
-	public User getUserById(Integer id) {
+	public User getUserById(Integer id) throws UserNotFoundException{
 		if (id < 0) {
 			throw new UserNotFoundException("User not found");
 		}

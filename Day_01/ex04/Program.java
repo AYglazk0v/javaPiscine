@@ -1,42 +1,36 @@
 public class Program {
 	public static void main(String arg[]) {
-		User u1 = new User(500, "Ivan");
-		User u2 = new User(500, "Petya");
+		try{
+			User u1 = new User(7500, "Ivan");
+			User u2 = new User(5500, "Petya");
+			TransactionsService transService = new TransactionsService();
+			transService.addUser(u1);
+			transService.addUser(u2);
+			transService.executeTransaction(u1.getID(), u2.getID(), 400);
+			transService.executeTransaction(u2.getID(), u1.getID(), 150);
+			transService.executeTransaction(u1.getID(), u2.getID(), 100);
+			System.out.println(u1);
+			System.out.println("_______________________________________________________");
+			System.out.println(u2);
+			System.out.println("_______________________________________________________");
+			u1.getTransactionsList().printLst();
+			System.out.println("_______________________________________________________");
+			Transaction t1 = new Transaction(u1, u2, 75, Transaction.Category.DEBIT);
+			u1.getTransactionsList().addTransaction(t1);
+			u1.getTransactionsList().printLst();
+			System.out.println("_______________________________________________________");
+			Transaction[] err = transService.getInvalidTransaction();
+			u1.getTransactionsList().printLst();
+			System.out.println("_______________________________________________________");
 
-		Transaction t1 = new Transaction(u1, u2, 250, Transaction.Category.DEBIT);
-		Transaction t2 = new Transaction(u2, u1, 250, Transaction.Category.CREDITS);
-		Transaction t3 = new Transaction(u1, u2, 250, Transaction.Category.DEBIT);
-		Transaction t4 = new Transaction(u2, u1, 250, Transaction.Category.CREDITS);
-		Transaction t5 = new Transaction(u1, u2, 250, Transaction.Category.DEBIT);
-		Transaction t6 = new Transaction(u2, u1, 250, Transaction.Category.CREDITS);
-		Transaction t7 = new Transaction(u1, u2, 250, Transaction.Category.DEBIT);
-		Transaction t8 = new Transaction(u2, u1, 250, Transaction.Category.CREDITS);
-	
-		TransactionsLinkedList lstTrans = new TransactionsLinkedList();
-
-		lstTrans.addTransaction(t2);
-		lstTrans.addTransaction(t3);
-		lstTrans.addTransaction(t4);
-		lstTrans.addTransaction(t5);
-		lstTrans.addTransaction(t7);
-		lstTrans.addTransaction(t1);
-		lstTrans.addTransaction(t6);
-		lstTrans.addTransaction(t8);
-
-		try {
-			lstTrans.removeTransactionById(t1.getIdentifier());
-			lstTrans.removeTransactionById(t2.getIdentifier());
-			lstTrans.removeTransactionById(t3.getIdentifier());
-			lstTrans.removeTransactionById(t4.getIdentifier());
-			lstTrans.removeTransactionById(t5.getIdentifier());
-			lstTrans.removeTransactionById(t6.getIdentifier());
-			lstTrans.removeTransactionById(t7.getIdentifier());
-			lstTrans.removeTransactionById(t8.getIdentifier());
-			lstTrans.printLst();
-		} catch (TransactionNotFoundException err) {
-			System.out.println(err.getMessage());
+			for (int i = 0; i < err.length; i++){
+				System.out.println("ERROR_ARRAY: " + err[i]);
+			}
 		}
-	}
+		catch (UserNotFoundException | IllegalTransactionException | TransactionNotFoundException e ) {
+				System.out.println(e.getMessage());
+			}
+		}
 }
 
 

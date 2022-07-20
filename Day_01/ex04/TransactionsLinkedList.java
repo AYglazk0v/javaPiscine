@@ -18,7 +18,7 @@ public class TransactionsLinkedList implements TransactionsList {
 	}
 
 	@Override
-	public void removeTransactionById(UUID id) {
+	public void removeTransactionById(UUID id) throws TransactionNotFoundException {
 		Transaction tmp;
 		Transaction prev;
 
@@ -42,7 +42,7 @@ public class TransactionsLinkedList implements TransactionsList {
 				tmp = prev.getNext();
 			}
 		}
-		throw new TransactionNotFoundException("Transaction not found");
+		throw new TransactionNotFoundException("Transaction " + id + " not found");
 	}
 
 	@Override
@@ -54,6 +54,18 @@ public class TransactionsLinkedList implements TransactionsList {
 			tmp = tmp.getNext();   
 		}
 		return transArr;
+	}
+
+	public int getSizeLst()
+	{
+		int i = 0;
+		Transaction tmp;
+		tmp = this.start;
+		while(tmp != null){
+			i++;
+			tmp = tmp.getNext();
+		}	
+		return (i);
 	}
 
 	public void printLst(){
