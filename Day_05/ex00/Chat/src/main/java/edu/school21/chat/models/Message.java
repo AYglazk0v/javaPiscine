@@ -62,7 +62,7 @@ public class Message {
 	public int hasCode() {return super.hashCode();}
 	
 	@Override
-	public int equals(obj e) {return super.equals(e);}
+	public boolean equals(obj e) {return super.equals(e);}
 
 	@Override
 	public String toString(){
