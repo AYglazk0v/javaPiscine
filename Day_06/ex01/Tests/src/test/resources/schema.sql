@@ -1,0 +1,6 @@
+CREATE TABLE product (
+	id INTEGER NOT NULL,
+	name VARCHAR(40) NOT NULL,
+	price DOUBLE NOT NULL,
+	PRIMARY KEY (id)
+);
