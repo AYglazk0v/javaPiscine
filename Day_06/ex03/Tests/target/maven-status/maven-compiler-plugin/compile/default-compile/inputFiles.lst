@@ -1,0 +1,8 @@
+/home/ayglazkov/javaPiscine/Day_06/ex03/Tests/src/main/java/edu/school21/repositories/ProductsRepository.java
+/home/ayglazkov/javaPiscine/Day_06/ex03/Tests/src/main/java/edu/school21/repositories/ProductsRepositoryJdbcImpl.java
+/home/ayglazkov/javaPiscine/Day_06/ex03/Tests/src/main/java/edu/school21/services/UsersServiceImpl.java
+/home/ayglazkov/javaPiscine/Day_06/ex03/Tests/src/main/java/edu/school21/repositories/UsersRepository.java
+/home/ayglazkov/javaPiscine/Day_06/ex03/Tests/src/main/java/edu/school21/exceptions/AlreadyAuthenticatedException.java
+/home/ayglazkov/javaPiscine/Day_06/ex03/Tests/src/main/java/edu/school21/numbers/NumberWorker.java
+/home/ayglazkov/javaPiscine/Day_06/ex03/Tests/src/main/java/edu/school21/models/User.java
+/home/ayglazkov/javaPiscine/Day_06/ex03/Tests/src/main/java/edu/school21/models/Product.java

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="edu.school21.numbers.NumberWorkerTest" time="0.134" tests="32" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/ayglazkov/javaPiscine/Day_06/ex03/Tests/target/test-classes:/home/ayglazkov/javaPiscine/Day_06/ex03/Tests/target/classes:/home/ayglazkov/.m2/repository/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar:/home/ayglazkov/.m2/repository/org/mockito/mockito-core/3.11.2/mockito-core-3.11.2.jar:/home/ayglazkov/.m2/repository/net/bytebuddy/byte-buddy/1.11.3/byte-buddy-1.11.3.jar:/home/ayglazkov/.m2/repository/net/bytebuddy/byte-buddy-agent/1.11.3/byte-buddy-agent-1.11.3.jar:/home/ayglazkov/.m2/repository/org/objenesis/objenesis/3.2/objenesis-3.2.jar:/home/ayglazkov/.m2/repository/org/projectlombok/lombok/1.18.22/lombok-1.18.22.jar:/home/ayglazkov/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar:/home/ayglazkov/.m2/repository/org/apache/maven/plugins/maven-surefire-plugin/3.0.0-M5/maven-surefire-plugin-3.0.0-M5.jar:/home/ayglazkov/.m2/repository/org/apache/maven/surefire/maven-surefire-common/3.0.0-M5/maven-surefire-common-3.0.0-M5.jar:/home/ayglazkov/.m2/repository/org/apache/maven/surefire/surefire-api/3.0.0-M5/surefire-api-3.0.0-M5.jar:/home/ayglazkov/.m2/repository/org/apache/maven/surefire/surefire-logger-api/3.0.0-M5/surefire-logger-api-3.0.0-M5.jar:/home/ayglazkov/.m2/repository/org/apache/maven/surefire/surefire-extensions-api/3.0.0-M5/surefire-extensions-api-3.0.0-M5.jar:/home/ayglazkov/.m2/repository/org/apache/maven/surefire/surefire-booter/3.0.0-M5/surefire-booter-3.0.0-M5.jar:/home/ayglazkov/.m2/repository/org/apache/maven/surefire/surefire-extensions-spi/3.0.0-M5/surefire-extensions-spi-3.0.0-M5.jar:/home/ayglazkov/.m2/repository/org/apache/maven/maven-toolchain/3.0-alpha-2/maven-toolchain-3.0-alpha-2.jar:/home/ayglazkov/.m2/repository/org/apache/maven/shared/maven-artifact-transfer/0.11.0/maven-artifact-transfer-0.11.0.jar:/home/ayglazkov/.m2/repository/org/apache/maven/shared/maven-common-artifact-filters/3.0.1/maven-common-artifact-filters-3.0.1.jar:/home/ayglazkov/.m2/repository/org/apache/maven/maven-model/3.0/maven-model-3.0.jar:/home/ayglazkov/.m2/repository/org/apache/maven/maven-plugin-api/3.0/maven-plugin-api-3.0.jar:/home/ayglazkov/.m2/repository/org/sonatype/sisu/sisu-inject-plexus/1.4.2/sisu-inject-plexus-1.4.2.jar:/home/ayglazkov/.m2/repository/org/codehaus/plexus/plexus-classworlds/2.2.3/plexus-classworlds-2.2.3.jar:/home/ayglazkov/.m2/repository/org/sonatype/sisu/sisu-inject-bean/1.4.2/sisu-inject-bean-1.4.2.jar:/home/ayglazkov/.m2/repository/org/sonatype/sisu/sisu-guice/2.1.7/sisu-guice-2.1.7-noaop.jar:/home/ayglazkov/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.1.0/maven-shared-utils-3.1.0.jar:/home/ayglazkov/.m2/repository/commons-io/commons-io/2.5/commons-io-2.5.jar:/home/ayglazkov/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/home/ayglazkov/.m2/repository/org/codehaus/plexus/plexus-java/1.0.5/plexus-java-1.0.5.jar:/home/ayglazkov/.m2/repository/org/ow2/asm/asm/7.2/asm-7.2.jar:/home/ayglazkov/.m2/repository/com/thoughtworks/qdox/qdox/2.0-M9/qdox-2.0-M9.jar:/home/ayglazkov/.m2/repository/org/apache/maven/surefire/surefire-shared-utils/3.0.0-M4/surefire-shared-utils-3.0.0-M4.jar:/home/ayglazkov/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.2/junit-jupiter-engine-5.7.2.jar:/home/ayglazkov/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/ayglazkov/.m2/repository/org/junit/platform/junit-platform-engine/1.7.2/junit-platform-engine-1.7.2.jar:/home/ayglazkov/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.1/junit-jupiter-params-5.8.1.jar:/home/ayglazkov/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/home/ayglazkov/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/ayglazkov/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/home/ayglazkov/.m2/repository/org/springframework/spring-jdbc/5.3.15/spring-jdbc-5.3.15.jar:/home/ayglazkov/.m2/repository/org/springframework/spring-beans/5.3.15/spring-beans-5.3.15.jar:/home/ayglazkov/.m2/repository/org/springframework/spring-core/5.3.15/spring-core-5.3.15.jar:/home/ayglazkov/.m2/repository/org/springframework/spring-jcl/5.3.15/spring-jcl-5.3.15.jar:/home/ayglazkov/.m2/repository/org/springframework/spring-tx/5.3.15/spring-tx-5.3.15.jar:/home/ayglazkov/.m2/repository/org/hsqldb/hsqldb/2.4.0/hsqldb-2.4.0.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Linux"/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk/jre/lib/amd64"/>
+    <property name="sun.java.command" value="/home/ayglazkov/javaPiscine/Day_06/ex03/Tests/target/surefire/surefirebooter2908675765286278828.jar /home/ayglazkov/javaPiscine/Day_06/ex03/Tests/target/surefire 2022-07-27T20-39-20_215-jvmRun1 surefire5905947552298044113tmp surefire_05660034867405088339tmp"/>
+    <property name="surefire.test.class.path" value="/home/ayglazkov/javaPiscine/Day_06/ex03/Tests/target/test-classes:/home/ayglazkov/javaPiscine/Day_06/ex03/Tests/target/classes:/home/ayglazkov/.m2/repository/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar:/home/ayglazkov/.m2/repository/org/mockito/mockito-core/3.11.2/mockito-core-3.11.2.jar:/home/ayglazkov/.m2/repository/net/bytebuddy/byte-buddy/1.11.3/byte-buddy-1.11.3.jar:/home/ayglazkov/.m2/repository/net/bytebuddy/byte-buddy-agent/1.11.3/byte-buddy-agent-1.11.3.jar:/home/ayglazkov/.m2/repository/org/objenesis/objenesis/3.2/objenesis-3.2.jar:/home/ayglazkov/.m2/repository/org/projectlombok/lombok/1.18.22/lombok-1.18.22.jar:/home/ayglazkov/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar:/home/ayglazkov/.m2/repository/org/apache/maven/plugins/maven-surefire-plugin/3.0.0-M5/maven-surefire-plugin-3.0.0-M5.jar:/home/ayglazkov/.m2/repository/org/apache/maven/surefire/maven-surefire-common/3.0.0-M5/maven-surefire-common-3.0.0-M5.jar:/home/ayglazkov/.m2/repository/org/apache/maven/surefire/surefire-api/3.0.0-M5/surefire-api-3.0.0-M5.jar:/home/ayglazkov/.m2/repository/org/apache/maven/surefire/surefire-logger-api/3.0.0-M5/surefire-logger-api-3.0.0-M5.jar:/home/ayglazkov/.m2/repository/org/apache/maven/surefire/surefire-extensions-api/3.0.0-M5/surefire-extensions-api-3.0.0-M5.jar:/home/ayglazkov/.m2/repository/org/apache/maven/surefire/surefire-booter/3.0.0-M5/surefire-booter-3.0.0-M5.jar:/home/ayglazkov/.m2/repository/org/apache/maven/surefire/surefire-extensions-spi/3.0.0-M5/surefire-extensions-spi-3.0.0-M5.jar:/home/ayglazkov/.m2/repository/org/apache/maven/maven-toolchain/3.0-alpha-2/maven-toolchain-3.0-alpha-2.jar:/home/ayglazkov/.m2/repository/org/apache/maven/shared/maven-artifact-transfer/0.11.0/maven-artifact-transfer-0.11.0.jar:/home/ayglazkov/.m2/repository/org/apache/maven/shared/maven-common-artifact-filters/3.0.1/maven-common-artifact-filters-3.0.1.jar:/home/ayglazkov/.m2/repository/org/apache/maven/maven-model/3.0/maven-model-3.0.jar:/home/ayglazkov/.m2/repository/org/apache/maven/maven-plugin-api/3.0/maven-plugin-api-3.0.jar:/home/ayglazkov/.m2/repository/org/sonatype/sisu/sisu-inject-plexus/1.4.2/sisu-inject-plexus-1.4.2.jar:/home/ayglazkov/.m2/repository/org/codehaus/plexus/plexus-classworlds/2.2.3/plexus-classworlds-2.2.3.jar:/home/ayglazkov/.m2/repository/org/sonatype/sisu/sisu-inject-bean/1.4.2/sisu-inject-bean-1.4.2.jar:/home/ayglazkov/.m2/repository/org/sonatype/sisu/sisu-guice/2.1.7/sisu-guice-2.1.7-noaop.jar:/home/ayglazkov/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.1.0/maven-shared-utils-3.1.0.jar:/home/ayglazkov/.m2/repository/commons-io/commons-io/2.5/commons-io-2.5.jar:/home/ayglazkov/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/home/ayglazkov/.m2/repository/org/codehaus/plexus/plexus-java/1.0.5/plexus-java-1.0.5.jar:/home/ayglazkov/.m2/repository/org/ow2/asm/asm/7.2/asm-7.2.jar:/home/ayglazkov/.m2/repository/com/thoughtworks/qdox/qdox/2.0-M9/qdox-2.0-M9.jar:/home/ayglazkov/.m2/repository/org/apache/maven/surefire/surefire-shared-utils/3.0.0-M4/surefire-shared-utils-3.0.0-M4.jar:/home/ayglazkov/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.2/junit-jupiter-engine-5.7.2.jar:/home/ayglazkov/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/ayglazkov/.m2/repository/org/junit/platform/junit-platform-engine/1.7.2/junit-platform-engine-1.7.2.jar:/home/ayglazkov/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.1/junit-jupiter-params-5.8.1.jar:/home/ayglazkov/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/home/ayglazkov/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/ayglazkov/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/home/ayglazkov/.m2/repository/org/springframework/spring-jdbc/5.3.15/spring-jdbc-5.3.15.jar:/home/ayglazkov/.m2/repository/org/springframework/spring-beans/5.3.15/spring-beans-5.3.15.jar:/home/ayglazkov/.m2/repository/org/springframework/spring-core/5.3.15/spring-core-5.3.15.jar:/home/ayglazkov/.m2/repository/org/springframework/spring-jcl/5.3.15/spring-jcl-5.3.15.jar:/home/ayglazkov/.m2/repository/org/springframework/spring-tx/5.3.15/spring-tx-5.3.15.jar:/home/ayglazkov/.m2/repository/org/hsqldb/hsqldb/2.4.0/hsqldb-2.4.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/ayglazkov"/>
+    <property name="user.language" value="ru"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk/jre"/>
+    <property name="basedir" value="/home/ayglazkov/javaPiscine/Day_06/ex03/Tests"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/home/ayglazkov/javaPiscine/Day_06/ex03/Tests/target/surefire/surefirebooter2908675765286278828.jar"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_342-b07"/>
+    <property name="user.name" value="ayglazkov"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="5.18.14-arch1-1"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/ayglazkov/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="1.8.0_342"/>
+    <property name="user.dir" value="/home/ayglazkov/javaPiscine/Day_06/ex03/Tests"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.342-b07"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="isPrimeForNotPrimes{int}[1]" classname="edu.school21.numbers.NumberWorkerTest" time="0.019"/>
+  <testcase name="isPrimeForNotPrimes{int}[2]" classname="edu.school21.numbers.NumberWorkerTest" time="0"/>
+  <testcase name="isPrimeForNotPrimes{int}[3]" classname="edu.school21.numbers.NumberWorkerTest" time="0.001"/>
+  <testcase name="isPrimeForNotPrimes{int}[4]" classname="edu.school21.numbers.NumberWorkerTest" time="0"/>
+  <testcase name="isPrimeForNotPrimes{int}[5]" classname="edu.school21.numbers.NumberWorkerTest" time="0.001"/>
+  <testcase name="isPrimeForNotPrimes{int}[6]" classname="edu.school21.numbers.NumberWorkerTest" time="0.001"/>
+  <testcase name="isPrimeForNotPrimes{int}[7]" classname="edu.school21.numbers.NumberWorkerTest" time="0"/>
+  <testcase name="checkDigitsSum{int, int}[1]" classname="edu.school21.numbers.NumberWorkerTest" time="0.001"/>
+  <testcase name="checkDigitsSum{int, int}[2]" classname="edu.school21.numbers.NumberWorkerTest" time="0"/>
+  <testcase name="checkDigitsSum{int, int}[3]" classname="edu.school21.numbers.NumberWorkerTest" time="0.001"/>
+  <testcase name="checkDigitsSum{int, int}[4]" classname="edu.school21.numbers.NumberWorkerTest" time="0.001"/>
+  <testcase name="checkDigitsSum{int, int}[5]" classname="edu.school21.numbers.NumberWorkerTest" time="0.001"/>
+  <testcase name="checkDigitsSum{int, int}[6]" classname="edu.school21.numbers.NumberWorkerTest" time="0.001"/>
+  <testcase name="checkDigitsSum{int, int}[7]" classname="edu.school21.numbers.NumberWorkerTest" time="0"/>
+  <testcase name="checkDigitsSum{int, int}[8]" classname="edu.school21.numbers.NumberWorkerTest" time="0.001"/>
+  <testcase name="checkDigitsSum{int, int}[9]" classname="edu.school21.numbers.NumberWorkerTest" time="0.001"/>
+  <testcase name="checkDigitsSum{int, int}[10]" classname="edu.school21.numbers.NumberWorkerTest" time="0"/>
+  <testcase name="checkDigitsSum{int, int}[11]" classname="edu.school21.numbers.NumberWorkerTest" time="0.001"/>
+  <testcase name="checkDigitsSum{int, int}[12]" classname="edu.school21.numbers.NumberWorkerTest" time="0.003"/>
+  <testcase name="checkDigitsSum{int, int}[13]" classname="edu.school21.numbers.NumberWorkerTest" time="0"/>
+  <testcase name="checkDigitsSum{int, int}[14]" classname="edu.school21.numbers.NumberWorkerTest" time="0.001"/>
+  <testcase name="isPrimeForPrimes{int}[1]" classname="edu.school21.numbers.NumberWorkerTest" time="0.001"/>
+  <testcase name="isPrimeForPrimes{int}[2]" classname="edu.school21.numbers.NumberWorkerTest" time="0.001"/>
+  <testcase name="isPrimeForPrimes{int}[3]" classname="edu.school21.numbers.NumberWorkerTest" time="0"/>
+  <testcase name="isPrimeForPrimes{int}[4]" classname="edu.school21.numbers.NumberWorkerTest" time="0.001"/>
+  <testcase name="isPrimeForPrimes{int}[5]" classname="edu.school21.numbers.NumberWorkerTest" time="0"/>
+  <testcase name="isPrimeForPrimes{int}[6]" classname="edu.school21.numbers.NumberWorkerTest" time="0.002"/>
+  <testcase name="isPrimeForIllegalNumber{int}[1]" classname="edu.school21.numbers.NumberWorkerTest" time="0.001"/>
+  <testcase name="isPrimeForIllegalNumber{int}[2]" classname="edu.school21.numbers.NumberWorkerTest" time="0.001"/>
+  <testcase name="isPrimeForIllegalNumber{int}[3]" classname="edu.school21.numbers.NumberWorkerTest" time="0.001"/>
+  <testcase name="isPrimeForIllegalNumber{int}[4]" classname="edu.school21.numbers.NumberWorkerTest" time="0"/>
+  <testcase name="isPrimeForIllegalNumber{int}[5]" classname="edu.school21.numbers.NumberWorkerTest" time="0.001"/>
+</testsuite>
